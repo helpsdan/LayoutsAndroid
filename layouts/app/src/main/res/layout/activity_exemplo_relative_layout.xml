@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_padding_padrao"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="@dimen/width_height_img"
+        android:layout_height="@dimen/width_height_img"
+        android:src="@drawable/p1"
+        android:id="@+id/imgPessoa"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jo_o_da_silva"
+        android:layout_toRightOf="@id/imgPessoa"
+        android:textSize="@dimen/text_size_nome"
+        android:id="@+id/txtNome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:id="@+id/txtEmail"
+        android:layout_toRightOf="@id/imgPessoa"
+        android:layout_below="@id/txtNome"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/voltar"
+        android:layout_alignParentBottom="true"
+        android:onClick="voltar"/>
+
+</RelativeLayout>
